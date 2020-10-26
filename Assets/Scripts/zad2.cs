@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class zad2 : MonoBehaviour
 {
-
-    public float force = 10.0f;
+    public float speed = 10.0f;
     public Vector3 start;
     public Vector3 stop;
     Rigidbody rb;
@@ -21,12 +20,12 @@ public class zad2 : MonoBehaviour
         if (transform.position.x <= start.x)
         {
             // działamy siłą na ciało A :)
-            rb.AddForce(Vector3.right * force, ForceMode.Impulse);
+            rb.AddForce(speed * Time.deltaTime, 0, 0, ForceMode.Impulse);
         }
         if (transform.position.x >= stop.x)
         {
             // działamy siłą na ciało A :)
-            rb.AddForce(Vector3.left * force, ForceMode.Impulse);
+            rb.AddForce(-speed * Time.deltaTime, 0, 0, ForceMode.Impulse);
         }
     }
 }

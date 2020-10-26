@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd8b14bd4b0f9ab49bd25c12b597deae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5
+  speed: 100
   start: {x: 0, y: 0, z: 0}
   stop: {x: 10, y: 0, z: 0}
 --- !u!64 &348467455
@@ -553,7 +553,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2282
+  m_Name: pb_Mesh16800
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
